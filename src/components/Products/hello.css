@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: local('Quicksand'), url(./Quicksand-Regular.ttf) format('ttf');
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  .test{
+      font-family: 'Poppins',sans-serif;
+      /* font-weight: bold; */
+      /* font-family: monospace; */
+      padding: 20px;
+      font-size: 1.2rem;
+  }
