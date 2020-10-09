@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   display: block;
 
   & span {
-    background: #003A52;
+    background: var(--primary-color);
     display: block;
     position: relative;
     border-radius:50px;

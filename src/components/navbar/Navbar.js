@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import styled from "styled-components";
 import { useSpring, animated, config } from "react-spring";
 
@@ -8,13 +8,13 @@ import CollapseMenu from "./CollapseMenu";
 
 const Navbar = (props) => {
   const barAnimation = useSpring({
-    from: { transform: 'translate3d(0, -10rem, 0)' },
-    transform: 'translate3d(0, 0, 0)',
+    from: { transform: "translate3d(0, -10rem, 0)" },
+    transform: "translate3d(0, 0, 0)",
   });
 
   const linkAnimation = useSpring({
-    from: { transform: 'translate3d(0, 30px, 0)', opacity: 0 },
-    to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
+    from: { transform: "translate3d(0, 30px, 0)", opacity: 0 },
+    to: { transform: "translate3d(0, 0, 0)", opacity: 1 },
     delay: 800,
     config: config.wobbly,
   });
@@ -26,27 +26,30 @@ const Navbar = (props) => {
           <Brand />
           <NavLinks style={linkAnimation}>
             <a href="/">Home</a>
-            <a href="/">ABout us</a>
             <a href="/">Products</a>
-            <a href="/">Contact Us</a>
+            <a href="/">ABout us</a>
+            {/* <a href="/">Contact Us</a> */}
+            <CallButton href="tel:7892263212" style={{color:"white"}} className="call-btn">
+              7892263212
+            </CallButton>
           </NavLinks>
           <BurgerWrapper>
             <BurgerMenu
-              navbarState={props.navbarState} 
+              navbarState={props.navbarState}
               handleNavbar={props.handleNavbar}
             />
           </BurgerWrapper>
         </FlexContainer>
       </NavBar>
-      <CollapseMenu 
-        navbarState={props.navbarState} 
+      <CollapseMenu
+        navbarState={props.navbarState}
         handleNavbar={props.handleNavbar}
       />
-   </>
-  )
-}
+    </>
+  );
+};
 
-export default Navbar
+export default Navbar;
 
 const NavBar = styled(animated.nav)`
   position: fixed;
@@ -62,12 +65,12 @@ const FlexContainer = styled.div`
   max-width: 120rem;
   display: flex;
   margin: auto;
-  padding: 0 2rem;;
-  z-index:999;
+  padding: 0 1.4rem;
+  z-index: 999;
   justify-content: space-between;
   height: 4rem;
-  border-bottom:1px solid #CCD6F6;
-  /* box-shadow: 0px 1px 8px #CCD6F6; */
+  /* border-bottom:1px solid #CCD6F6; */
+  box-shadow: 1px 1px 30px #ccd6f6;
 `;
 
 const NavLinks = styled(animated.ul)`
@@ -76,7 +79,7 @@ const NavLinks = styled(animated.ul)`
   margin: auto 0;
 
   & a {
-    color: #003A52;
+    color: var(--primary-color);
     text-transform: uppercase;
     border-bottom: 1px solid transparent;
     margin: 0 1.5rem;
@@ -84,9 +87,9 @@ const NavLinks = styled(animated.ul)`
     text-decoration: none;
     cursor: pointer;
     font-size: 65.5%;
-    font-weight:600;
+    font-weight: 600;
     &:hover {
-      color: #FFC483;
+      color: var(--brand-color);
       /* border-bottom: 1px solid #fdcb6e; */
     }
 
@@ -102,4 +105,9 @@ const BurgerWrapper = styled.div`
   @media (min-width: 769px) {
     display: none;
   }
+`;
+const CallButton = styled.a`
+  padding: 10px 10px;
+  border-radius: 4px;
+  background: var(--primary-color);
 `;

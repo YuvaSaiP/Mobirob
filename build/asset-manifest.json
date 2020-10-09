@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1da18be9.chunk.css",
+    "main.js": "/static/js/main.1c89e187.chunk.js",
+    "main.js.map": "/static/js/main.1c89e187.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2dd23561.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2dd23561.js.map",
+    "static/js/2.d2ade5bd.chunk.js": "/static/js/2.d2ade5bd.chunk.js",
+    "static/js/2.d2ade5bd.chunk.js.map": "/static/js/2.d2ade5bd.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e70acc8b6e8f99a937c2ee01a4f780bb.js": "/precache-manifest.e70acc8b6e8f99a937c2ee01a4f780bb.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.1da18be9.chunk.css.map": "/static/css/main.1da18be9.chunk.css.map",
+    "static/js/2.d2ade5bd.chunk.js.LICENSE.txt": "/static/js/2.d2ade5bd.chunk.js.LICENSE.txt",
+    "static/media/MOBIROBO.png": "/static/media/MOBIROBO.76acd6af.png",
+    "static/media/google.png": "/static/media/google.36982f01.png",
+    "static/media/iphone.png": "/static/media/iphone.709edfb4.png",
+    "static/media/lenovo.png": "/static/media/lenovo.84ac18d5.png",
+    "static/media/oneplus.png": "/static/media/oneplus.96a8e62b.png",
+    "static/media/oppo.png": "/static/media/oppo.052c599e.png",
+    "static/media/realme.png": "/static/media/realme.0ceaf36c.png",
+    "static/media/samsung.png": "/static/media/samsung.58da3029.png",
+    "static/media/slide3.png": "/static/media/slide3.c27d7cb1.png",
+    "static/media/vivo.png": "/static/media/vivo.c28cb330.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2dd23561.js",
+    "static/js/2.d2ade5bd.chunk.js",
+    "static/css/main.1da18be9.chunk.css",
+    "static/js/main.1c89e187.chunk.js"
+  ]
+}

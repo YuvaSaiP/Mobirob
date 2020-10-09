@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components";
 
 // import logo from "../../assets/logo.jpeg";
-import logo2 from "../../assets/mobi.png";
+import logo2 from "../../assets/MOBIROBO.png";
 
 const Brand = () => {
   return (
@@ -13,7 +13,7 @@ const Brand = () => {
 export default Brand
 
 const Image = styled.img`
-  height: 85%;
+  height: 65%;
   margin: auto 0;
   /* border-radius:50%; */
 `;

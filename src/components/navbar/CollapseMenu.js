@@ -17,9 +17,12 @@ const CollapseMenu = (props) => {
       >
         <NavLinks>
           <li><a href="/" onClick={props.handleNavbar}>Home</a></li>
-          <li><a href="/" onClick={props.handleNavbar}>About Us</a></li>
           <li><a href="/" onClick={props.handleNavbar}>Products</a></li>
-          <li><a href="/" onClick={props.handleNavbar}>Contact Us</a></li>
+          <li><a href="/" onClick={props.handleNavbar}>About Us</a></li>
+          {/* <li><a href="/" onClick={props.handleNavbar}>Contact Us</a></li> */}
+          <CallButton href="tel:7892263212" style={{color:"white"}} className="call-btn">
+              7892263212
+            </CallButton>
         </NavLinks>
       </CollapseWrapper>
     );
@@ -32,15 +35,22 @@ export default CollapseMenu;
 const CollapseWrapper = styled(animated.div)`
   background: #ffffff;
   position: fixed;
-  top: 3.5rem;
+  top: 3.8rem;
   display:flex;
+  /* z-index:999; */
   justify-content:center;
   text-align:center;
   left: 0;
   right: 0;
-  box-shadow: 0px 1px 8px #CCD6F6;
+  /* box-shadow: 0px 1px 8px #CCD6F6; */
+  border-bottom:1px solid #CCD6F6;
 `;
-
+const CallButton = styled.a`
+  padding: 6px 10px;
+  border-radius: 4px;
+  background: var(--primary-color);
+`;
+ 
 const NavLinks = styled.ul`
   list-style-type: none;
   padding: 2rem 1rem 2rem 2rem;
@@ -52,16 +62,17 @@ const NavLinks = styled.ul`
   & a {
     font-size: 1rem;
     line-height: 2;
-    color: #003A52;
+    color: var(--primary-color);
     /* color: #0A192F; */
+    margin:20px;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
     font-weight:700;
 
     &:hover {
-      color: #2DBBC4;
-      color: #FFC483;
+      /* color: #2DBBC4; */
+      color: var(--brand-color);
     }
   }
 `;
