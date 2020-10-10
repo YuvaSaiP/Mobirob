@@ -144,7 +144,7 @@ export default function Footer() {
 const FooterWrapper = styled.div`
   background: var(--primary-color);
   margin: 0 auto;
-  background: #00415c;
+  background: #003a52;
   padding: 60px 0px;
   font-family: "Poppins", sans-serif;
   display: grid;
@@ -153,6 +153,7 @@ const FooterWrapper = styled.div`
   @media screen and (max-width: 480px) {
     /* flex-direction: column; */
     padding-left: 30px;
+    margin-bottom:-28px;
   }
 `;
 
@@ -173,10 +174,6 @@ const EachLinkItem = styled.div`
   text-transform: uppercase;
   color: #b1c0f1;
   color: #ccd6f6;
-
-  @media screen and (max-width: 480px) {
-    font-size: 0.8rem;
-  }
 `;
 
 const LinksCategoryHeader = styled.h2`
@@ -187,16 +184,16 @@ const LinksCategoryHeader = styled.h2`
 `;
 
 const CopyRights = styled.div`
+border-top:1px solid #ccd6f62f;
   width: 100%;
   color: #ccd6f6;
-  padding: 10px 0px;
+  padding: 16px 0px;
   background: #003a52;
-  /* background: #00415c; */
   font-size: 1rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
   @media screen and (max-width: 480px) {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 `;
 
