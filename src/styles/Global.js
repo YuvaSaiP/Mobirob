@@ -3,12 +3,12 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
 
   @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 :root{
   --brand-color:#ffaa19;
-  --primary-color:#003A52;
+  --primary-color:#003A52; 
   --des-text:#7d7d7d;
 }
   *,
@@ -20,7 +20,9 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-      ${"" /* font-size: 62.5%;  */}
+        ${"" /* font-size: 62.5%;   */}
+        scroll-behavior:smooth;
+        box-sizing: border-box;
   }
 
   body {
@@ -33,9 +35,7 @@ const GlobalStyles = createGlobalStyle`
   }
   .site-wrapper{
     width:90%;
-    ${'' /* padding-top:4.2rem; */}
-    ${"" /* background:white; */}
-    margin:0 auto;
+        margin:0 auto;
   }
 `;
 

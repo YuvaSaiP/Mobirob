@@ -74,8 +74,7 @@ const ContainerWrapper = styled.div`
 
 const EachItem = styled.div`
   background: white;
-  padding: 30px 25px;
-  /* display: flex; */
+  padding: 25px 20px;
   -webkit-box-shadow: 8px 12px 24px 5px rgba(204, 214, 246, 0.64);
   box-shadow: 8px 12px 24px -5px rgba(204, 214, 246, 0.64);
   border-radius: 10px;
@@ -88,8 +87,7 @@ const Header = styled.h2`
   display: flex;
   font-size: 1.8rem;
   text-align: center;
-  padding:20px;
-  /* background:red; */
+  margin:25px 0px 14px 0px;
   font-family:"Poppins",sans-serif;
   justify-content: center;
 `;

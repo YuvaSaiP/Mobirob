@@ -28,7 +28,6 @@ const Navbar = (props) => {
             <a href="/">Home</a>
             <a href="/">Products</a>
             <a href="/">ABout us</a>
-            {/* <a href="/">Contact Us</a> */}
             <CallButton href="tel:7892263212" style={{color:"white"}} className="call-btn">
               7892263212
             </CallButton>

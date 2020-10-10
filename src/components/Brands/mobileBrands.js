@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import oneplus from "../../assets/brands/oneplus.png";
-import apple from "../../assets/brands/iphone.png";
+import apple from "../../assets/brands/apple-compressed.jpg";
 import samsung from "../../assets/brands/samsung.png";
 import vivo from "../../assets/brands/vivo.png";
 import google from "../../assets/brands/google.png";
@@ -40,7 +40,7 @@ export default function mobileBrands() {
         </EachBrand>
         
         <EachBrand>
-          <Image src={moto} alt="" srcset="" width="120px" />
+          <Image src={moto} alt="" srcset="" width="100px" />
         </EachBrand>
         <EachBrand>
           <Image src={huawei} alt="" srcset="" width="110px" />
@@ -63,7 +63,8 @@ const Header = styled.h2`
   font-size:1.8rem;
   text-align: center;
   font-family:"Poppins",sans-serif;
-  padding:16px;
+  /* padding:16px; */
+  margin:25px 0px 14px 0px;
   justify-content: center;
   @media screen and (max-width: 480px) {
     font-size:1.7rem;
