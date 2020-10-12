@@ -4,7 +4,6 @@ import SwiperCore, { Autoplay, Keyboard } from "swiper";
 import "swiper/swiper-bundle.css";
 import styled from "styled-components";
 import slide1 from "../../assets/Banners/slide3.png";
-// import slide2 from "../../assets/Banners/slide2.jpg";
 SwiperCore.use([Autoplay, Keyboard]);
 
 const swiperSlider = () => {

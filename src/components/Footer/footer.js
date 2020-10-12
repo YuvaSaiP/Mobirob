@@ -11,6 +11,8 @@ import {
   faChevronRight,
   faMobileAlt,
   faHome,
+  
+  faClock,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 export default function Footer() {
@@ -59,6 +61,11 @@ export default function Footer() {
                 <FontAwesomeIcon icon={faFacebookF} />
               </div>
             </SocialMedia>
+          </EachLinkItem>
+          <EachLinkItem>
+            <p>
+              9 : 00 am - 10 : 00 pm
+            </p>
           </EachLinkItem>
         </LinksCategoryWrapper>
         <LinksCategoryWrapper>
@@ -132,10 +139,13 @@ export default function Footer() {
               560076.
             </p>
           </EachLinkItem>
+          
         </LinksCategoryWrapper>
       </FooterWrapper>
       <CopyRights>
-        <p>Copyright © 2020. All Rights Reserved By Mobirobo</p>
+        <p>
+          Copyright © Mobirobo {new Date().getFullYear()}. All Rights Reserved.
+        </p>
       </CopyRights>
     </div>
   );
@@ -153,7 +163,7 @@ const FooterWrapper = styled.div`
   @media screen and (max-width: 480px) {
     /* flex-direction: column; */
     padding-left: 30px;
-    margin-bottom:-28px;
+    margin-bottom: -28px;
   }
 `;
 
@@ -184,7 +194,7 @@ const LinksCategoryHeader = styled.h2`
 `;
 
 const CopyRights = styled.div`
-border-top:1px solid #ccd6f62f;
+  border-top: 1px solid #ccd6f62f;
   width: 100%;
   color: #ccd6f6;
   padding: 16px 0px;
