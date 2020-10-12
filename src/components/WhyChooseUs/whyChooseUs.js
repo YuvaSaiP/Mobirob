@@ -4,7 +4,7 @@ import "../Products/hello.css";
 export default function whyChooseUs() {
   return (
     <div>
-      <Header>Why Choose Us</Header>
+      <Header>Best Mobile Repair Service</Header>
       <ContainerWrapper>
         <EachItem>
           <IconWrapper>
@@ -87,9 +87,13 @@ const Header = styled.h2`
   display: flex;
   font-size: 1.8rem;
   text-align: center;
-  margin:25px 0px 14px 0px;
-  font-family:"Poppins",sans-serif;
+  margin: 50px 0px 14px 0px;
+  font-family: "Poppins", sans-serif;
   justify-content: center;
+  @media screen and (max-width: 480px) {
+    font-size: 1.4rem;
+    margin: 25px 0px 12px 0px;
+  }
 `;
 
 const IconWrapper = styled.div`

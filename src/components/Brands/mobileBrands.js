@@ -15,7 +15,11 @@ import asus from "../../assets/brands/asus.png";
 export default function mobileBrands() {
   return (
     <div>
-    <Header>Top Repaired Brands</Header>
+    <Header>Mobile Brands We Service</Header>
+    <Description>
+At Mobirobo, We repair all the latest model Mobiles, Tablets, Smart Watches at best price.
+
+    </Description>
       <BrandsWrapper>
         <EachBrand>
           <Image src={apple} alt="" srcset="" width="90px" />
@@ -64,10 +68,10 @@ const Header = styled.h2`
   text-align: center;
   font-family:"Poppins",sans-serif;
   /* padding:16px; */
-  margin:25px 0px 14px 0px;
+  margin:50px 0px 6px 0px;
   justify-content: center;
   @media screen and (max-width: 480px) {
-    font-size:1.7rem;
+    font-size:1.4rem;
   }
 `;
 const BrandsWrapper = styled.div`
@@ -99,7 +103,16 @@ const EachBrand = styled.div`
 `;
 
 const Image = styled.img`
-  /* width: 100px; */
   margin: auto 0;
-  /* border-radius:50%; */
+`;
+
+const Description = styled.p`
+text-align:center;
+display: flex;
+justify-content:center;
+  margin-bottom:20px;
+@media screen and (max-width: 480px) {
+
+  font-size:0.85rem;
+}
 `;
