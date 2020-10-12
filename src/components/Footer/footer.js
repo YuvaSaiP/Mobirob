@@ -11,8 +11,6 @@ import {
   faChevronRight,
   faMobileAlt,
   faHome,
-  
-  faClock,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 export default function Footer() {
