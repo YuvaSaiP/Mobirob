@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import React from "react";
 import "./hello.css";
-import mobileCase from "../../assets/mobile-case.jpg";
 export default function hello() {
   return (
     <div>
