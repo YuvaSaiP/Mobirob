@@ -22,11 +22,7 @@ export default function issuesWeSolve() {
       img: "https://www.flaticon.com/svg/static/icons/svg/644/644529.svg",
       width:35
     },
-    {
-      issueName: "Laptop Screen",
-      img: "https://www.flaticon.com/svg/static/icons/svg/606/606286.svg",
-      width:34
-    },
+    
   ];
   return (
       <div>
