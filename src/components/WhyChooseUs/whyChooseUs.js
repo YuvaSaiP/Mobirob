@@ -54,6 +54,22 @@ export default function whyChooseUs() {
             technician.
           </Description>
         </EachItem>
+    <EachItem>
+          <IconWrapper>
+            <img
+              src="https://www.flaticon.com/svg/static/icons/svg/3604/3604032.svg"
+              alt=""
+              srcset=""
+              width="70px"
+            />
+          </IconWrapper>
+          <HeadingText>Lowest & Affordable Pricing</HeadingText>
+          <Description>
+            We have our own trained, professional & experienced technician.
+            Which make you comfortable to hand over your gadget to our
+            technician.
+          </Description>
+        </EachItem>
       </ContainerWrapper>
     </div>
   );
