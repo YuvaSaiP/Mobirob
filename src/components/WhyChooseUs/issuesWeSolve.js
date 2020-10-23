@@ -18,10 +18,16 @@ export default function issuesWeSolve() {
       width:35
     },
     {
+      issueName: "Laptop Screen",
+      img: "https://www.flaticon.com/svg/static/icons/svg/606/606286.svg",
+      width:34
+    },
+    {
       issueName: "Apple Watch",
       img: "https://www.flaticon.com/svg/static/icons/svg/644/644529.svg",
       width:35
     },
+    
   ];
   return (
       <div>
@@ -36,8 +42,9 @@ export default function issuesWeSolve() {
             <img
               style={{ marginRight: "20px" }}
               src={eachIssue.img}
-              alt=""
+              
               width={eachIssue.width}
+          alt=''
             />
             <IssueTitle>{eachIssue.issueName}</IssueTitle>
           </EachIssue>
@@ -71,13 +78,11 @@ const EachIssue = styled.div`
   display: flex;
   -webkit-box-shadow: 8px 12px 24px 5px rgba(204, 214, 246, 0.45);
   box-shadow: 8px 12px 24px -5px rgba(204, 214, 246, 0.45);
-  /* transform: rotate(2deg); */
   background: #fff;
   padding: 10px 0px 10px 8px;
   align-items: center;
   border: 1px solid rgba(204, 214, 246);
   border-left: 3px solid #ffaa19;
-  
   border-radius: 10px;
 `;
 
@@ -92,9 +97,10 @@ const Description = styled.p`
 text-align:center;
 display: flex;
 justify-content:center;
-  margin-bottom:20px;
-@media screen and (max-width: 480px) {
+ margin-bottom:20px;
 
+@media screen and (max-width: 478px) {
+// new mobile screen
   font-size:0.85rem;
 }
 `;
