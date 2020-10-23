@@ -40,6 +40,12 @@ export default function hello() {
             <Button>View Products</Button>
           </EachItemDiv>
         </EachItemContainer>
+        <EachItemContainer>
+          <EachItemDiv>
+            <CategoryHeading>Laptop Repair</CategoryHeading>
+            <Button>Fix Your Screen</Button>
+          </EachItemDiv>
+        </EachItemContainer>
       </CategoryWrapper>
     </div>
   );
@@ -79,10 +85,8 @@ const EachItemContainer = styled.div`
   overflow-wrap: break-word;
   flex-direction: column;
   justify-self: auto;
-  background-image:linear-gradient(
-      rgba(0, 0, 0, 0.4), 
-      rgba(0, 0, 0, 0.30)
-    ) ,url("https://images.unsplash.com/photo-1566793474285-2decf0fc182a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("https://images.unsplash.com/photo-1566793474285-2decf0fc182a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
   background-size: cover;
 `;
 
@@ -91,8 +95,8 @@ const Button = styled.button`
   padding: 8px 16px;
   border: 1px solid white;
   border-radius: 50px;
-  outline:none;
-  cursor:pointer;
+  outline: none;
+  cursor: pointer;
   font-size: 0.85rem;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
