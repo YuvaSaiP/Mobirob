@@ -31,7 +31,7 @@ export default function Footer() {
           </EachLinkItem>
           <EachLinkItem>
             <SocialMedia>
-              <div style={{ paddingRight: "8px" }}>
+              <div style={{ paddingRight: "9px" }}>
                 <a
                   href="https://www.instagram.com/mobirobo"
                   style={{ color: "#ccd6f6" }}
@@ -137,6 +137,14 @@ export default function Footer() {
               560076.
             </p>
           </EachLinkItem>
+    <EachUserReview>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio a
+                laudantium rem vitae eius. Ratione ea dolores officiis veritatis
+                exercitationem!
+              </p>
+              <i>Rajesh C</i>
+            </EachUserReview>
           
         </LinksCategoryWrapper>
       </FooterWrapper>
