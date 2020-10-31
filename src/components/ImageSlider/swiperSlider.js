@@ -9,13 +9,13 @@ SwiperCore.use([Autoplay, Keyboard]);
 const swiperSlider = () => {
   return (
     <Swiper
-      spaceBetween={10}
+      spaceBetween={15}
       slidesPerView={1}
-      loop={true}
+      loop={false}
       
       style={{ zIndex: "-999" }}
       onSlideChange={() => console.log("slide change")}
-      autoplay={true}
+      autoplay={false}
       keyboard={true}
       onSwiper={(swiper) => console.log(swiper)}
     >
@@ -33,6 +33,11 @@ const swiperSlider = () => {
       </SwiperSlide>
       {/* third one */}
       <SwiperSlide>
+        <SlidesWrapper>
+          <EachSlide src={slide1} />
+        </SlidesWrapper>
+      </SwiperSlide>
+<SwiperSlide>
         <SlidesWrapper>
           <EachSlide src={slide1} />
         </SlidesWrapper>
